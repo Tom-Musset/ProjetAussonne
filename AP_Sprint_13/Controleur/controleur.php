@@ -140,7 +140,7 @@ if(!isset($_SESSION['key']))
 					if (isset($_SESSION['login']))
 					{
 						$existe=$this->maBD->verifExistance($_SESSION['role'],$_SESSION['login'],$_SESSION['pwd']);
-						$vue->AfficherMenuContextuel($_SESSION['role'],$existe);
+						$vue->AfficherMenuContextuel($_SESSION['role'],$existe[0][0]);
 						require 'vues/ihm/nouvelle.php';
 					}
 					else
@@ -172,6 +172,7 @@ if(!isset($_SESSION['key']))
 					echo $message;
 					break;
 				case "Deconnexion" :
+					$_SESSION = array();
 					session_destroy();
 					$vue=new vueCentraleConnexion();
 					$vue->afficheMenuInternaute();
