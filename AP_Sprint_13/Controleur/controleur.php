@@ -148,7 +148,7 @@ if(!isset($_SESSION['key']))
 						$vue->afficheMenuInternaute();
 						require 'vues/ihm/nouvelle.php';
 					}
-					echo $liste=$this->maBD->listeDesNouvellesPourUnType($typeNouvelleChoisi);
+					//echo $liste=$this->maBD->listeDesNouvellesPourUnType($typeNouvelleChoisi);
 					
 					break;
 				case "contact":
