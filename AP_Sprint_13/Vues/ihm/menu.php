@@ -55,15 +55,15 @@
 					<?php require "vues/ihm/deconnexion.php";?>
 					<br> <p align=center>Choisir le thème des nouvelles que vous souhaitez afficher </p><br>
 					<?php 
-						echo '<form action=index.php method=GET align=center>';
+						echo '<script type="text/javascript" src="Outil/ajax.js"></script><form align=center>';
 									$_GET['vue']='Connexion';
 									$_GET['action']='initialiserTypeNouvelle';
 									$monControleur->affichePage($_GET['action'],$_GET['vue'],$role);
 									echo '<br> <br> 
 									<input type=hidden name=vue value=Connexion></input>
 									<input type=hidden name=action value=typeChoixNouvelle></input>
-									<button type="submit" class="btn btn-primary">Valider</button>
+									<button type="button" class="btn btn-primary" onClick="appelAjax();">Valider</button>
 							 </form>';
 					?>
 				</div>
-				<div class="col-md-10 col-xs-12 ">
+				<div id="contenuajax" class="col-md-10 col-xs-12 "></div>
