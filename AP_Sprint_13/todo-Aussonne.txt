@@ -1,6 +1,2 @@
-ajouter un adhérent
-modifier un adhérent
-gérer l'affichage quand trigger bloque
-quand utilise l'affichage des news->deconnexion
-erreur quand on essai de se connecter sans rien rentrer
-voir pour hasher les mdp.
+voir pour hasher les mdp.->peu important 
+phpunit -> important
