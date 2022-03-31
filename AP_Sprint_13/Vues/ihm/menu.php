@@ -65,5 +65,5 @@
 									<button type="button" class="btn btn-primary" onClick="appelAjax();">Valider</button>
 							 </form>';
 					?>
-				</div>
-				<div id="contenuajax" class="col-md-10 col-xs-12 "></div>
+				</div><!--
+				<div id="contenuajax" class="col-md-10 col-xs-12 "></div>-->
