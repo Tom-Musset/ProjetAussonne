@@ -123,7 +123,7 @@
 				echo '</tr>';
 			}
 			echo '</tbody>';
-			echo '</table>';
+			echo '</table> </div>';
 			
 		}
 
@@ -170,7 +170,9 @@
 						echo '</tbody>';
 						echo '</table>';
 			}
+			echo'</div>';
 		}
+		
 		
 	public function choixFaitPourModifEquipe($nom, $nbrPlace, $ageMin, $ageMax, $sexe, $choix,$liste, $liste2)
 	{
