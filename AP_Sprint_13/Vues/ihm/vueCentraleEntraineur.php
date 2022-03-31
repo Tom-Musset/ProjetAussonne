@@ -101,6 +101,7 @@
                             }
                         }
                     }
+					echo'</tbody></table></div>';
 		}
 
 		public function choixFaitPourModifEntraineur($nom, $login, $pwd, $choix, $typeEntraineur,$info)
@@ -131,7 +132,7 @@
 				<input type=password name=pwdEntraineur></input>
 				<input type=hidden name=idEntraineur value='.$id.'></input>	
 				<input type="submit">
-		</form>';
+		</form></div>';
 	}
 
 		public function visualiserEntraineur($lesTitulaires,$lesVacataires,$EntraineurSpecialite,$listeSpecialite,$lesEquipes)
