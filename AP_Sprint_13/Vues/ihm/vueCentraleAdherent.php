@@ -126,7 +126,7 @@
 				echo '</tr>';
 			}
 			echo '</tbody>';
-			echo '</table>';
+			echo '</table></div>';
 		}
 
 		public function visualiserCoéquipier($lesAdherents,$id)
@@ -169,7 +169,7 @@
 			
 
 			echo '</tbody>';
-			echo '</table>';
+			echo '</table></div>';
 		}
 
 		public function modifierSonProfil($id){
@@ -178,7 +178,7 @@
 					<input type=password name=pwdAdherent></input>
 					<input type=hidden name=idAdherent value='.$id.'></input>	
 					<input type="submit">
-			</form>';
+			</form></div>';
 	}
 		
 		public function voyagerAdherent()
