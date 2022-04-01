@@ -1,2 +1,1 @@
-voir pour hasher les mdp.->peu important 
-phpunit -> important
+voir pour hasher les mdp.->peu important
